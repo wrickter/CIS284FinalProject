@@ -1,0 +1,42 @@
+﻿@model FinalProject.Models.MainPageModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <style>
+        body {
+            background-color: deepskyblue
+        }
+    </style>
+</body>
+<main>
+    <section class="row">
+        <div style="text-align:center">
+
+            <div>
+                <img src="~/Images/Overwatch-Logo.png" alt="Logo.png" class="mainLogo" />
+            </div>
+
+            <p>
+                Overwatch 2 is a recent revamp to a video game developed by Activision Blizzard. When Overwatch first released in 2016, it won Game of the Year in
+                2016. With the release of this game it became a new style of arcade shooter described as a "hero shooter". With fast paced heroes and team combat, emerged a new kind
+                of video game. After 6 years of being in development, the game studio decided to release the now dubbed sequal to the hit game Overwatch.
+            </p>
+            <p><a href="https://overwatch.blizzard.com/en-us/" target="_blank" class="btn btn-primary btn-md">Overwatch &raquo;</a></p>
+        </div>
+    </section>
+
+    <div class="row">
+        @foreach (var item in Model.mainPageItems)
+        {
+            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                <h2 id="gettingStartedTitle">@item.Title</h2>
+                <p> @item.Description</p>
+            </section>
+        }
+    </div>
+</main>
+<!--Images property of Blizzard Entertainment. References from https://en.wikipedia.org/wiki/Overwatch_(video_game). -->
+<!--Developed by Wesley Rickter-->

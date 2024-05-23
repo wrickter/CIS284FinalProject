@@ -1,0 +1,64 @@
+﻿@model FinalProject.Models.CompositionsPageModel
+@{
+    ViewBag.Title = "Compositions";
+}
+<body>
+    <style>
+        body {
+            background-color: deepskyblue
+        }
+    </style>
+</body>
+
+<main>
+    <div>
+        <h2>Compositions</h2>
+    </div>
+    <div>
+        <p>
+            Compositions or "comps" refer to the construction and way a team plays the match. If they want to play aggressive and force space, they will most likely play certain heroes
+            that are better at self sustain and have good burst damage. There is a multitude of different comps a team can play. You can have a hybrid between certain comps where it is
+            a mix of characters from different compositions. The main different types of comps are Dive, Poke, and Brawl. With the way that Overwatch plays, counter-swapping is almost 
+            built into the nature of the game. Dive is good against Poke, Poke is good against Brawl, and Brawl is good against Dive.
+        </p>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <strong>Dive: </strong> Dive gets its name from the heroes playing in a way to force themselves in the backline and attempt to eliminate the enemy supports.
+                This comp is heavily based on characters with high mobility and good self-sustain. You need high mobility and self-sustain because most of the time you are not fighting
+                with your whole team. It is more spread out with everyone taking different angles and then attacking a single enemy at once. You will usually see heroes like Winston, D.VA, Tracer, Sombra, Brigitte, and Ana. It is not 
+                uncommon to see heroes like Genji, Zenyatta, Doomfist, Lucio, Wrecking Ball, or Kiriko.
+
+            </li>
+            
+            <li>
+                <strong>Poke: </strong> The main core of Poke is to do enough damage to the enemy team to make them use their resources to make them easier to eliminate. Poke is usually lower damage output but high amounts of 
+                resources. At the core, Poke thrives on slowing the game down to allow your team to build up ultimates and turn the fight into your favor. Usually you have more "tanky" heroes in a Poke comp than in a Dive. With
+                how Poke is played, you want higher HP characters that do not require high burst healing. You also want heroes that are good at a longer range due to not wanting to engage in a close quarter battle with the enemy team.
+                Heroes that are good with Poke are characters like Sigma, Ramattra, Orisa, Baptiste, and Zenyatta. Damage heroes like Soldier: 76 that are hitscan are very strong in this type of comp.
+                
+            </li>
+            <li>
+                <strong>Brawl: </strong> If you want to play a brawl comp, you would want to take fights close to the enemy team. Brawl thrives on a "tit for tat" type of play. With Brawl,
+                you take fights close and "headbash" into the enemy team. Brawl is usually used with heroes that do not have long range utility and thrive in a close quarter battle. Heroes that 
+                are more centered towards being close to the enemy to do high damage are very favored in this type of comp. Heroes like Ramattra, Junker Queen, Reinhardt, and Zarya are good tanks for Brawl. Reaper is
+                a very good choice for damage characters because they heal while doing damage. Other characters like Mei, Symmetra, Bastion, and Torbjörn are not bad characters either to select for this comp. Support 
+                characters like Lucio, Ana, Kiriko,
+                and Moira are good for Brawl.
+            </li>
+        </ul>
+    </div>
+    <div class="form-group">
+        <span>@Model.Question</span>
+        <form asp-action="Compositions" method="post">
+            <div class="form-group">
+                <input name="answer" asp-for=Answer class="form-control" style="width:200px" />
+                <span asp-validation-for="Answer" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+    </div>
+</main>
+<!--Code by Wesley Rickter-->

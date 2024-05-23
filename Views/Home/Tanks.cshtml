@@ -1,0 +1,36 @@
+﻿@model FinalProject.Models.TankPageModel
+@{
+    ViewBag.Title = "Tanks";
+}
+<body>
+    <style>
+        img {
+            border: 3px solid #ffffff
+        }
+
+        body {
+            background-color: deepskyblue
+        }
+    </style>
+</body>
+
+<main aria-labelledby="Tank">
+    <div class="row">
+        @foreach (var item in Model.tankPageItems)
+        {
+            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                @if (!string.IsNullOrWhiteSpace(item.ImgName))
+                {
+                    <span>
+                        <img class="images" src=@($"/Images/{item.ImgName}.png") />
+                    </span>
+                }
+                <h2 id="gettingStartedTitle">@item.Name</h2>
+                <p><strong>Overview:</strong> @item.Overview</p>
+                <p><strong>Origin Story:</strong> @item.Origin</p>
+            </section>
+        }
+    </div>
+</main>
+<!--Images and hero descriptions from https://overwatch.blizzard.com/en-us/heroes/-->
+<!--Code by Wesley Rickter-->

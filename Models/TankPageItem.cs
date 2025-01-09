@@ -1,6 +1,6 @@
 ﻿namespace FinalProject.Models
 {
-    public class SupportPageItem
+    public class TankPageItem
     {
         public string HeroName { get; set; }
         public string HeroImage { get; set; }

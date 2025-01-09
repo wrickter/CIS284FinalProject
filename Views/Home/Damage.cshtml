@@ -1,7 +1,9 @@
 ﻿@model FinalProject.Models.DamagePageModel
+@inject FinalProject.Controllers.OverwatchContext _context
 @{
     ViewBag.Title = "Damage";
 }
+<h1 class="role"><strong>Damage</strong></h1>
 <body>
     <style>
         img {
@@ -19,15 +21,15 @@
         @foreach (var item in Model.damagePageItems)
         {
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                @if (!string.IsNullOrWhiteSpace(item.ImgName))
+                @if (!string.IsNullOrWhiteSpace(item.HeroImage))
                 {
                     <span>
-                        <img class="images" src=@($"/Images/Damage/{item.ImgName}.png") />
+                        <img class="images" src=@($"/Images/Damage/{item.HeroImage}.png") />
                     </span>
                 }
-                <h2 id="gettingStartedTitle">@item.Name</h2>
-                <p><strong>Overview:</strong> @item.Overview</p>
-                <p><strong>Origin Story:</strong> @item.Origin</p>
+                <h2 id="gettingStartedTitle">@item.HeroName</h2>
+                <p><strong>Overview:</strong> @item.HeroOverview</p>
+                <p><strong>Origin Story:</strong> @item.HeroOrigin</p>
             </section>
         }
     </div>

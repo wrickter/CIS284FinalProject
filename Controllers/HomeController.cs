@@ -8,10 +8,12 @@ namespace FinalProject.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly OverwatchContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, OverwatchContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -23,20 +25,29 @@ namespace FinalProject.Controllers
 
         public IActionResult Tanks()
         {
-            TankPageModel model = new TankPageModel();
-            model.tankPageItems = model.PopulateTankPageItems();
+            var tankPageItems = _context.Tanks.ToList();
+            TankPageModel model = new TankPageModel
+            {
+                tankPageItems = tankPageItems
+            };
             return View(model);
         }
         public IActionResult Damage()
         {
-            DamagePageModel model = new DamagePageModel();
-            model.damagePageItems = model.PopulateDamagePageItems();
+            var damagePageItems = _context.Damage.ToList();
+            DamagePageModel model = new DamagePageModel
+            {
+                damagePageItems = damagePageItems
+            };
             return View(model);
         }
         public IActionResult Support()
         {
-            SupportPageModel model = new SupportPageModel();
-            model.supportPageItems = model.PopulateSupportPageItems();
+            var supportPageItems = _context.Support.ToList();
+            SupportPageModel model = new SupportPageModel
+            {
+                supportPageItems = supportPageItems
+            };
             return View(model);
         }
         [HttpGet]

@@ -1,5 +1,10 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using FinalProject.Models;
+using FinalProject.Controllers;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<OverwatchContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

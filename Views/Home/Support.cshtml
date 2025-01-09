@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Support";
 }
+<h1 class="role"><strong>Supports</strong></h1>
 <body>
     <style>
         img {
@@ -18,15 +19,15 @@
         @foreach (var item in Model.supportPageItems)
         {
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                @if (!string.IsNullOrWhiteSpace(item.ImgName))
+                @if (!string.IsNullOrWhiteSpace(item.HeroImage))
                 {
                     <span>
-                        <img class="images" src=@($"/Images/Support/{item.ImgName}.png") />
+                        <img class="images" src=@($"/Images/Support/{item.HeroImage}.png") />
                     </span>
                 }
-                <h2 id="gettingStartedTitle">@item.Name</h2>
-                <p><strong>Overview:</strong> @item.Overview</p>
-                <p><strong>Origin Story:</strong> @item.Origin</p>
+                <h2 id="gettingStartedTitle">@item.HeroName</h2>
+                <p><strong>Overview:</strong> @item.HeroOverview</p>
+                <p><strong>Origin Story:</strong> @item.HeroOrigin</p>
             </section>
         }
     </div>

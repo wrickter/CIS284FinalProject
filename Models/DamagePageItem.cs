@@ -2,9 +2,10 @@
 {
     public class DamagePageItem
     {
-        public string Name { get; set; }
-        public string Overview { get; set; }
-        public string Origin { get; set; }
-        public string ImgName { get; set; }
+        public string HeroName { get; set; }
+        public string HeroImage { get; set; }
+        public string HeroOverview { get; set; }
+        public string HeroOrigin { get; set; }
+        
     }
 }

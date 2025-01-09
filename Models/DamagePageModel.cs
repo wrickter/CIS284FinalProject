@@ -65,8 +65,8 @@
                 },
                 new DamagePageItem()
                 {
-                    ImgName = "Phara",
-                    Name = "Phara",
+                    ImgName = "Pharah",
+                    Name = "Pharah",
                     Overview = "Fareeha Amari's commitment to duty runs in her blood. She comes from a long line of highly decorated soldiers and burns with the desire to serve with honor.",
                     Origin = "Fareeha Amari dreamed of being part of Overwatch with her mother Ana, only to see it disbanded before she had the chance. She found success as “Pharah”, head of an elite security squad guarding the rogue AI that started the Omnic Crisis. But now that a new Overwatch has returned, Pharah's dreams are finally becoming a reality."
                 },
@@ -118,6 +118,13 @@
                     Name = "Tracer",
                     Overview = "The former Overwatch agent known as Tracer is a time-jumping adventurer and an irrepressible force for good.",
                     Origin = "Tracer is a time-jumping adventurer and an irrepressible force for good. With a chronal harness that lets her control her flow of time, she was one of Overwatch’s top agents, and she continues to try to make the world a better place wherever – and whenever – she can. Tracer brings her skill and optimism to help the new Overwatch keep the world safe."
+                },
+                new DamagePageItem()
+                {
+                    ImgName = "Venture",
+                    Name = "Venture",
+                    Overview = "A globe-trotting archaeologist and explorer, Venture has a passion for solving history’s mysteries. ",
+                    Origin = "When adventure calls, Sloan Cameron always answers. As a member of the Wayfinder Society, Sloan travels the world, using their excavating tools to uncover artifacts and protect archaeological sites from looters, thieves, and more dangerous criminal organizations. "
                 },
                 new DamagePageItem()
                 {

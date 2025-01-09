@@ -18,9 +18,16 @@
                 new TankPageItem()
                 {
                     ImgName = "Doom",
-                    Name = "DoomFist",
+                    Name = "Doomfist",
                     Overview = "Doomfist is the calculating leader of Talon, a terrorist organization and paramilitary force that works in direct opposition to Overwatch.",
                     Origin = "A highly trained fighter and born leader, Akande Ogundimu lost his right arm in the Omnic Crisis, then joined Talon. Rising through the ranks, he killed his boss – the previous Doomfist – taking his eponymous weapon and title. Now, he is determined to plunge the world into a new conflict for his own mysterious purposes."
+                },
+                new TankPageItem()
+                {
+                    ImgName = "Hazard",
+                    Name = "Hazard",
+                    Overview = "A radical disruptor and an unstoppable weapon, Hazard has rocketed to fame in the criminal underworld as he fights to tear the system down. ",
+                    Origin = "After pulling himself from the wreckage of a troubled past, Hazard has pushed his body beyond its limits with advanced augmentations that enhance his strength and agility. As a member of the Phreaks, he fights to protect those he feels the system has left behind. Passionate and radical, Hazard is proud to stand with his found family of body modders against Overwatch, Talon, and any organization that enforces the status quo. "
                 },
                 new TankPageItem()
                 {
@@ -28,6 +35,13 @@
                     Name = "Junker Queen",
                     Overview = "Armed with her axe, Carnage, and her electromagnetic gauntlet, the cutthroat leader of the Junkers is on a mission to rule the world.",
                     Origin = "A former wastelander, Odessa \"Dez\" Stone has ruled the squabbling Junker factions for over a decade. Everywhere she goes is her battlefield of choice, every seat is her throne, and everyone on the planet is her subject, whether they know it or not. Her tale of conquest is just beginning..."
+                },
+                new TankPageItem()
+                {
+                    ImgName ="Mauga",
+                    Name = "Mauga",
+                    Overview = "A charismatic and cunning Samoan warrior, Mauga thrives in the chaos of the battlefield and lives every day like it’s his last.",
+                    Origin = "Mauga Malosi was born to challenge the system. Previously the member of the eco-rebel group, the Deepsea Raiders, he is now a Talon mercenary, wreaking havoc all around the world. Wherever he goes, he knows how to have a good time."
                 },
                 new TankPageItem()
                 {

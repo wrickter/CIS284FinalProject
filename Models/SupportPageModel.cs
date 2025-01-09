@@ -37,6 +37,13 @@ namespace FinalProject.Models
                     Overview = "As the last of the Inti Warriors, Illari is a vessel for the power of the sun. She’ll do anything to make up for her past.",
                     Origin = "Growing up, Illari Quispe Ruiz trained every day to become part of the Inti Warriors – an augmented group of noble protectors and masters of harnessing solar energy. After a horrific accident killed all the other Warriors, the guilt-stricken Illari vows to make up for her part in the tragedy."
                 },
+                 new SupportPageItem()
+                {
+                    ImgName = "Juno",
+                    Name = "Juno",
+                    Overview = "The first human born on Mars, Juno uses her space-age technology to solve any problem that enters her orbit. She is determined to one day save her home planet.",
+                    Origin = "Juno Teo Minh was born on Mars during Project Red Promise – Lucheng Interstellar’s secret multi-stage initiative to terraform the planet. When dust storms began to ravage the planet, the Red Promise Colony lost contact with Lucheng, throwing the project’s future into jeopardy. To protect Juno, the Red Promise Team sent her to planet Earth, where she could live her life in safety. Now, Juno is determined to find a way to save her home and family – before time runs out."
+                },
                 new SupportPageItem()
                 {
                     ImgName = "Kiriko",
@@ -75,7 +82,7 @@ namespace FinalProject.Models
                 new SupportPageItem()
                 {
                     ImgName = "Zen",
-                    Name = "Zenatta",
+                    Name = "Zenyatta",
                     Overview = "Zenyatta is an omnic monk who wanders the world in search of spiritual enlightenment. It is said that those who cross his path are never the same again.",
                     Origin = "Zenyatta is an omnic monk who wanders the world in search of spiritual enlightenment, helping those he meets to overcome their personal struggles and find inner peace. When necessary, however, he will fight to protect the innocent, be they omnic or human. It is said that those who cross his path are never the same again."
                 }

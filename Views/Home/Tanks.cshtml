@@ -3,17 +3,7 @@
     ViewBag.Title = "Tanks";
 }
 <h1 class="role"><strong>Tanks</strong></h1>
-<body>
-    <style>
-        img {
-            border: 3px solid #ffffff
-        }
 
-        body {
-            background-color: deepskyblue
-        }
-    </style>
-</body>
 
 <main aria-labelledby="Tank">
     <div class="row">
@@ -22,13 +12,15 @@
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 @if (!string.IsNullOrWhiteSpace(item.HeroImage))
                 {
-                    <span>
-                        <img class="images" src=@($"/Images/Tanks/{item.HeroImage}.png") />
-                    </span>
+                    <div class="card" style="width: 18rem">
+                        <img class="card-img-top" src=@($"/Images/Tanks/{item.HeroImage}.png") alt=@($"{item.HeroName}") />
+                        <div class="card-body">
+                            <h2 id="card-text" class="heroName">@item.HeroName</h2>
+                        </div>
+                    </div>
                 }
-                <h2 id="gettingStartedTitle">@item.HeroName</h2>
-                <p><strong>Overview:</strong> @item.HeroOverview</p>
-                <p><strong>Origin Story:</strong> @item.HeroOrigin</p>
+                <p class="overview"><strong>Overview:</strong> @item.HeroOverview</p>
+                <p class="originStory"><strong>Origin Story:</strong> @item.HeroOrigin</p>
             </section>
         }
     </div>
